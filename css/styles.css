@@ -1,0 +1,245 @@
+:root {
+  --white-color: #ffffff;
+  --white-light-color: #f5f4fa;
+
+  --black-color: #000000;
+  --black-light-color: #212121;
+  --black-shadow-color: rgba(0, 0, 0, 0.15);
+  --black-blue-color: #2f303a;
+
+  --grey-color: #757575;
+  --grey-light-color: rgba(255, 255, 255, 0.6);
+
+  --blue-light-color: #2196f3;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--grey-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*-----1 блок - логотип, посилання------*/
+.header-logo,
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header-logo {
+  color: var(--black-color);
+}
+.footer-logo {
+  color: var(--white-color);
+}
+.colortext-web {
+  color: var(--blue-light-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black-light-color);
+}
+
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--blue-light-color);
+}
+
+.header-link.current {
+  color: var(--blue-light-color);
+}
+/*----------Oсновний блок------------*/
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--blue-light-color);
+}
+
+.hero-btn,
+.mainhero-btn {
+  cursor: pointer;
+}
+
+.hero {
+  background-color: var(--black-blue-color);
+}
+
+/*-------опис якостей------*/
+
+/*.feature-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-light-color);
+}*/
+.feature-third-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--black-light-color);
+}
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey-color);
+}
+
+/*------ABOUT----*/
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--black-light-color);
+}
+
+/*---TEAM----*/
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--black-light-color);
+}
+.team-third-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--black-light-color);
+}
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--grey-color);
+}
+.team {
+  background-color: var(--white-light-color);
+}
+.team-item {
+  width: 270px;
+  height: 368px;
+  top: 1635px;
+  background-color: var(--white-color);
+}
+/*----------FOOTER-------*/
+
+.footer-map {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+.footer-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey-light-color);
+}
+.footer {
+  background-color: var(--black-blue-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--blue-light-color);
+}
+
+/*---------ПОРТФОЛИО-MAIN--------------*/
+
+/*-------BUTTON--------*/
+
+.mainhero-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-light-color);
+  background-color: var(--white-light-color);
+}
+
+.mainhero-btn:hover,
+.mainhero-btn:focus {
+  color: var(--white-color);
+  background-color: var(--blue-light-color);
+}
+.mainhero-btn.current {
+  color: var(--white-color);
+  background-color: var(--blue-light-color);
+}
+/*----PICTURES----*/
+.mainhero-pictures {
+  width: 370px;
+  height: 404px;
+}
+
+.mainhero-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-light-color);
+}
+.mainhero-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--grey-color);
+}
+
+/*-----------DONE----------------*/
