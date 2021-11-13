@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 :root {
   --white-color: #ffffff;
   --white-light-color: #f5f4fa;
@@ -224,10 +233,6 @@ body {
   background-color: var(--blue-light-color);
 }
 /*----PICTURES----*/
-.mainhero-pictures {
-  width: 370px;
-  height: 404px;
-}
 
 .mainhero-title {
   font-weight: 700;
