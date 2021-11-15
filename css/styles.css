@@ -10,6 +10,7 @@ html {
 :root {
   --white-color: #ffffff;
   --white-light-color: #f5f4fa;
+  --white-middle-color: 1px solid #eeeeee;
 
   --black-color: #000000;
   --black-light-color: #212121;
@@ -25,7 +26,6 @@ html {
 }
 
 body {
-  width: 1600px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   background-color: var(--white-color);
@@ -56,7 +56,6 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 .section {
   padding-top: 94px;
@@ -76,8 +75,8 @@ ul {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  padding-left: 215px;
-  padding-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-logo,
@@ -148,6 +147,8 @@ ul {
 
 .hero-title {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   width: 696px;
   height: 120px;
   font-weight: 900;
@@ -184,8 +185,8 @@ ul {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0px;
   background-color: var(--black-blue-color);
 }
@@ -207,11 +208,10 @@ ul {
 .feature-list {
   display: flex;
 }
-.feature-item:not(:last-child){
-   margin-right: 30px;
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-}
 .feature-third-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -334,8 +334,8 @@ ul {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  padding-right: 1154px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--black-blue-color);
 }
 .footer-link:hover,
@@ -347,14 +347,19 @@ ul {
 
 /*-------BUTTON--------*/
 
-
-.btn {
+.mainhero-listbtn {
   display: flex;
+  justify-content: center;
   margin-bottom: 34px;
-  
 }
+.mainhero-item {
+  margin-right: 8px;
+}
+.mainhero-item:last-child {
+  margin-right: 0px;
+}
+
 .mainhero-btn {
-   display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -382,8 +387,27 @@ ul {
   background-color: var(--blue-light-color);
 }
 /*----PICTURES----*/
-
+.mainhero-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainhero-pictures {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: var(--white-middle-color);
+}
+.mainhero-pictures:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.mainhero-pictures:nth-child(3n) {
+  margin-right: 0px;
+}
 .mainhero-title {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -391,6 +415,9 @@ ul {
   color: var(--black-light-color);
 }
 .mainhero-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey-color);
